@@ -1,7 +1,8 @@
 import React from "react";
 import { Footer, Navbar } from "../src/components";
+import { NextPageWithLayout } from "./_app";
 
-const AnotherPage = () => {
+const AnotherPage: NextPageWithLayout = () => {
   return (
     <>
       <button className="btn">This is another page</button>
