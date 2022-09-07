@@ -1,3 +1,6 @@
+import React from "react";
+import { Footer, Navbar } from "../src/components";
+
 const AnotherPage = () => {
   return (
     <>
@@ -5,5 +8,13 @@ const AnotherPage = () => {
     </>
   );
 };
+
+AnotherPage.getLayout = (page: React.ReactNode) => (
+  <>
+    <Navbar />
+    <main>{page}</main>
+    <p>there is no footer</p>
+  </>
+);
 
 export default AnotherPage;
